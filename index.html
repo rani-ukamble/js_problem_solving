@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Problem solving</title>
+</head>
+
+<body>
+    <!-- onsubmit="event.preventDefault(); addtoList();": This prevents the form from submitting and reloading the page, so the list updates dynamically. -->
+    <form action="" onsubmit="event.preventDefault(); addtoList();">
+        <input id="name" type="text" placeholder="Enter Name">
+        <input id="email" type="text" placeholder="Enter Email">
+
+        <button type="submit">submit</button>
+    </form>
+    <ul id="user-list">
+        <li>Name: John Doe, Email: john@example.com</li>
+    </ul>
+
+    <br><br>
+
+    <input id="uname" placeholder="user name" type="text"> 
+    <button onclick="validate_username()">validate username</button>
+    <p id="validate"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
