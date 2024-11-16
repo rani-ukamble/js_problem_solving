@@ -1,32 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title>JavaScript Ex1</title>
+        <link rel="stylesheet" href="./css/stylesheet.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JS Problem solving</title>
-</head>
+    <body>
+        <h1>JavaScript Basics</h1>
+        <hr>
 
-<body>
-    <!-- onsubmit="event.preventDefault(); addtoList();": This prevents the form from submitting and reloading the page, so the list updates dynamically. -->
-    <form action="" onsubmit="event.preventDefault(); addtoList();">
-        <input id="name" type="text" placeholder="Enter Name">
-        <input id="email" type="text" placeholder="Enter Email">
+        <div class="container">
+            <input type="text" id="txt-1" placeholder="enter any number" />
+            <button onclick="increase_number()">increase</button>
 
-        <button type="submit">submit</button>
-    </form>
-    <ul id="user-list">
-        <li>Name: John Doe, Email: john@example.com</li>
-    </ul>
+            <p id="output-1">null</p>
+        </div>
 
-    <br><br>
+        <div class="container">
+            <input type="text" id="txt-2" placeholder="amount" />
+            <input type="text" id="txt-3" placeholder="discount" />
+            <button onclick="purchase_product()">purchase</button>
+        </div>
 
-    <input id="uname" placeholder="user name" type="text"> 
-    <button onclick="validate_username()">validate username</button>
-    <p id="validate"></p>
-
-    <script src="script.js"></script>
-</body>
-
+        <script src="script.js"></script>
+    </body>
 </html>

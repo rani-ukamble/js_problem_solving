@@ -1,0 +1,28 @@
+// Check if a required field is not empty
+function validateRequired(fieldValue) {
+  return fieldValue.trim() !== "";
+}
+
+// Check if a name is of minimum length
+function validateName(fieldValue, minLength = 3) {
+  return fieldValue.trim().length >= minLength;
+}
+
+// Check if the email is in a valid format
+function validateEmail(fieldValue) {
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  return emailPattern.test(fieldValue.trim());
+}
+
+// Check if the password meets minimum length requirements
+function validatePassword(fieldValue, minLength = 6) {
+  return fieldValue.length >= minLength;
+}
+
+// Check if age is within a valid range
+function validateAge(fieldValue, min = 18, max = 100) {
+  const age = parseInt(fieldValue, 10);
+  return age >= min && age <= max;
+}
+
+
